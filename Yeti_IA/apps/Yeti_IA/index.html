@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{{% block container %}
+    <div class="container">
+        <div class="row">
+             <div class="col-md-12">
+             <h1>Yeti_IA</h1>
+                <a href="{% url 'crear' %}" class="btn btn=primary">agregar tema</a>
+                 <table class="table">
+                     <thead>
+                     <tr>
+                          <th>#</th>
+                          <th>Nombre</th>
+                     </tr>
+                    </thead>
+                    <tbody>
+                    {% for temario in temario_lista %}
+                    </tbody>
+                </table>
+            </div>    
+        </div> 
+    </div> 
+
+{% endblock container %}}
